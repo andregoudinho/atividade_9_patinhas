@@ -1,10 +1,10 @@
 <?php
 $host = "localhost";
-$user = "root";
-$password = "root";
+$usuario = "root";
+$senha = "root";
 $banco = "petshop_db";
 
-$conexao = mysqli_connect($host, $user, $password, $banco);
+$conexao = mysqli_connect($host, $usuario, $senha, $banco);
 if (!$conexao->connect_error) {
     die("Falha na conexão: " . ($conexao->connect_error));
 }
