@@ -1,5 +1,5 @@
-create database if not exists petshop_db;
-use petshop_db;
+CREATE DATABASE IF NOT EXISTS petshop_db;
+USE petshop_db;
 
 CREATE TABLE clientes ( 
     id INT AUTO_INCREMENT PRIMARY KEY,
