@@ -6,17 +6,15 @@ $mensagem = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     $nome = $_POST["nome"]; 
-    $email = $_POST["email"]; 
-    $telefone = $_POST["telefone"]; 
     
-    if ($nome == "" || $email == "" || $telefone == "") { 
-        $mensagem = "Preencha todos os campos."; 
+    if ($nome == ""){
+        $mensagem = "Preencha este campo."; 
         } else { 
-            $sql = "INSERT INTO clientes (nome, email, telefone) 
-            VALUES (?, ?, ?)"; 
+            $sql = "INSERT INTO clientes (nome) 
+            VALUES (?)"; 
             
             $stmt = $conexao->prepare($sql); 
-            $stmt->bind_param("sss", $nome, $email, $telefone); 
+            $stmt->bind_param("s", $nome); 
             if ($stmt->execute()) { 
                 header("Location: listar_cliente.php"); 
             exit; 
@@ -54,16 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="mb-3">
             <label class="form-label">Nome</label>
             <input type="text" name="nome" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" name="email" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Telefone</label>
-            <input type="text" name="telefone" class="form-control" required>
         </div>
 
         <button type="submit" class="btn btn-primary">
