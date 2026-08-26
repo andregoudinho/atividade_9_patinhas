@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    background-image: url("pet_shop2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
