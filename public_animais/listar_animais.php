@@ -32,7 +32,7 @@ $resultado = $conexao->query($sql);
 
     <h1>Animais</h1>
 
-    <a href="cadastrar_animal.php" class="btn btn-primary mb-3">
+    <a href="cadastrar_animais.php" class="btn btn-primary mb-3">
         Cadastrar Animal
     </a>
 
@@ -63,11 +63,11 @@ $resultado = $conexao->query($sql);
 
             <td>
 
-                <a href="editar_animal.php?id=<?= $animal["id"] ?>" class="btn btn-secondary btn-sm">
+                <a href="editar_animais.php?id=<?= $animal["id"] ?>" class="btn btn-secondary btn-sm">
                     Editar
                 </a>
 
-                <a href="excluir_animal.php?id=<?= $animal["id"] ?>" class="btn btn-danger btn-sm">
+                <a href="excluir_animais.php?id=<?= $animal["id"] ?>" class="btn btn-danger btn-sm">
                     Excluir
                 </a>
 
@@ -78,6 +78,10 @@ $resultado = $conexao->query($sql);
         <?php } ?>
 
     </table>
+    
+     <a href="../index.php" class="btn btn-secondary">
+        Voltar
+    </a>
 
 </div>
 
