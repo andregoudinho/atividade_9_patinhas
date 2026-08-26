@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $usuario = "root";
-$senha = "root";
+$senha = "";
 $banco = "petshop_db";
 
 $conexao = mysqli_connect($host, $usuario, $senha, $banco);
