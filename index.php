@@ -17,24 +17,24 @@
 <body>
 
 <div class="container mt-4">
-
+   
     <h1>Pet Shop AUmigos</h1>
 
     <p>Sistema de cadastro de clientes e animais.</p>
 
-    <a href="clientes/cadastrar_cliente.php" class="btn btn-primary">
+    <a href="public_clientes/cadastrar_cliente.php" class="btn btn-primary">
         Cadastrar Cliente
     </a>
 
-    <a href="clientes/listar_cliente.php" class="btn btn-secondary">
-        Ver Clientes
+    <a href="public_clientes/listar_cliente.php" class="btn btn-secondary">
+        Ver Clientes    
     </a>
 
-    <a href="animais/cadastrar_animal.php" class="btn btn-primary">
+    <a href="public_animais/cadastrar_animais.php" class="btn btn-primary">
         Cadastrar Animal
     </a>
 
-    <a href="animais/listar_animais.php" class="btn btn-secondary">
+    <a href="public_animais/listar_animais.php" class="btn btn-secondary">
         Ver Animais
     </a>
 
