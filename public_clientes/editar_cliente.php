@@ -86,25 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                    value="<?= $cliente["nome"] ?>" required>
 
         </div>
-
-        <div class="mb-3">
-
-            <label class="form-label">Email</label>
-
-            <input type="email" name="email" class="form-control"
-                   value="<?= $cliente["email"] ?>" required>
-
-        </div>
-
-        <div class="mb-3">
-
-            <label class="form-label">Telefone</label>
-
-            <input type="text" name="telefone" class="form-control"
-                   value="<?= $cliente["telefone"] ?>" required>
-
-        </div>
-
+        
         <button type="submit" class="btn btn-primary">
             Salvar
         </button>

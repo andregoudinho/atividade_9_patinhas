@@ -37,8 +37,6 @@ $resultado = $conexao->query($sql);
 
         <tr>
             <th>Nome</th>
-            <th>Email</th>
-            <th>Telefone</th>
             <th>Ações</th>
         </tr>
 
@@ -47,10 +45,6 @@ $resultado = $conexao->query($sql);
         <tr>
 
             <td><?= $cliente["nome"] ?></td>
-
-            <td><?= $cliente["email"] ?></td>
-
-            <td><?= $cliente["telefone"] ?></td>
 
             <td>
 
