@@ -5,7 +5,7 @@ $senha = "root";
 $banco = "petshop_db";
 
 $conexao = mysqli_connect($host, $usuario, $senha, $banco);
-if (!$conexao->connect_error) {
+if ($conexao->connect_error) {
     die("Falha na conexão: " . ($conexao->connect_error));
 }
 
