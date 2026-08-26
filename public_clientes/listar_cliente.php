@@ -62,7 +62,7 @@ $resultado = $conexao->query($sql);
                     Excluir
                 </a>
 
-                <a href="detalhes_cliente.php?id=<?= $cliente["id"] ?>" class="btn btn-info btn-sm">
+                <a href="dados_cliente.php?id=<?= $cliente["id"] ?>" class="btn btn-info btn-sm">
                     Ver
                 </a>
 
