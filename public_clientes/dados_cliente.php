@@ -85,7 +85,7 @@ $animais = $stmt->get_result();
 
     </table>
 
-    <a href="listar_cliente.php" class="btn btn-secondary">
+    <a href="public_clientes/listar_cliente.php" class="btn btn-secondary">
         Voltar
     </a>
 

@@ -73,6 +73,9 @@ $resultado = $conexao->query($sql);
         <?php } ?>
 
     </table>
+     <a href="../index.php" class="btn btn-secondary">
+        Voltar
+    </a>
 
 </div>
 

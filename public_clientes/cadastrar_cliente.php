@@ -49,12 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <h1>Cadastrar Cliente</h1>
 
-    <?php if (isset($mensagem)) { ?>
-        <div class="alert alert-danger">
-            <?= $mensagem ?>
-        </div>
-    <?php } ?>
-
     <form method="POST">
 
         <div class="mb-3">
